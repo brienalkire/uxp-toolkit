@@ -1,5 +1,11 @@
 # @bubblydoo/uxp-puppeteer-transport
 
+## 0.0.4
+
+### Patch Changes
+
+- 6d2312d: Change package metadata
+
 ## 0.0.3
 
 ### Patch Changes

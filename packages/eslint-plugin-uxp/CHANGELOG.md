@@ -1,5 +1,11 @@
 # @bubblydoo/eslint-plugin-uxp
 
+## 0.0.5
+
+### Patch Changes
+
+- 6d2312d: Change package metadata
+
 ## 0.0.4
 
 ### Patch Changes

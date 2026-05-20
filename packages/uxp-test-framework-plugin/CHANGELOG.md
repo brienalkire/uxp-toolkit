@@ -1,5 +1,13 @@
 # @bubblydoo/uxp-test-framework-plugin
 
+## 0.0.23
+
+### Patch Changes
+
+- 6d2312d: Change package metadata
+- Updated dependencies [6d2312d]
+  - @bubblydoo/uxp-toolkit@0.0.21
+
 ## 0.0.22
 
 ### Patch Changes

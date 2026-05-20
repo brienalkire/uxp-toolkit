@@ -1,5 +1,13 @@
 # @adobe-uxp-types/photoshop
 
+## 0.1.8
+
+### Patch Changes
+
+- 6d2312d: Change package metadata
+- Updated dependencies [6d2312d]
+  - @adobe-uxp-types/uxp@0.1.4
+
 ## 0.1.7
 
 ### Patch Changes

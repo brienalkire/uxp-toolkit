@@ -1,5 +1,11 @@
 # @bubblydoo/uxp-devtools-common
 
+## 0.0.11
+
+### Patch Changes
+
+- 6d2312d: Change package metadata
+
 ## 0.0.10
 
 ### Patch Changes
