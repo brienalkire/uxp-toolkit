@@ -1,6 +1,6 @@
 # @adobe-uxp-types/uxp
 
-![NPM Version](https://img.shields.io/npm/v/@adobe-uxp-types/uxp)
+[![NPM Version](https://img.shields.io/npm/v/@adobe-uxp-types/uxp)](https://www.npmjs.com/package/@adobe-uxp-types/uxp)
 
 Type definitions for Adobe UXP API (`uxp`, `fs`, `os`, `path`, `process`, `shell` modules).
 

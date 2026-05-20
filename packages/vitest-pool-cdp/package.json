@@ -3,6 +3,16 @@
   "type": "module",
   "version": "0.0.10",
   "description": "Custom Vitest pool that runs tests in CDP-connected environments (browsers, Photoshop UXP, Electron, etc.)",
+  "author": "Hans Otto Wirtz <hansottowirtz@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/bubblydoo/uxp-toolkit/tree/main/packages/vitest-pool-cdp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bubblydoo/uxp-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bubblydoo/uxp-toolkit/issues"
+  },
   "exports": {
     ".": {
       "types": "./src/index.ts",

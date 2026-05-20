@@ -1,6 +1,6 @@
 # @bubblydoo/photoshop-mcp
 
-![NPM Version](https://img.shields.io/npm/v/@bubblydoo/photoshop-mcp)
+[![NPM Version](https://img.shields.io/npm/v/@bubblydoo/photoshop-mcp)](https://www.npmjs.com/package/@bubblydoo/photoshop-mcp)
 
 MCP (Model Context Protocol) server for Photoshop automation via Chrome DevTools Protocol.
 

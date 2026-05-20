@@ -1,6 +1,6 @@
 # @bubblydoo/uxp-devtools-common
 
-![NPM Version](https://img.shields.io/npm/v/@bubblydoo/uxp-devtools-common)
+[![NPM Version](https://img.shields.io/npm/v/@bubblydoo/uxp-devtools-common)](https://www.npmjs.com/package/@bubblydoo/uxp-devtools-common)
 
 Shared connection utilities for talking to Photoshop's UXP runtime via Adobe DevTools + CDP.
 

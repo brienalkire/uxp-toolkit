@@ -9,6 +9,9 @@
     "type": "git",
     "url": "https://github.com/bubblydoo/uxp-toolkit.git"
   },
+  "bugs": {
+    "url": "https://github.com/bubblydoo/uxp-toolkit/issues"
+  },
   "exports": {
     "./cli": {
       "types": "./dist-vite/cli.d.ts",

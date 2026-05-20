@@ -1,6 +1,6 @@
 # UXP Test Framework Base
 
-![NPM Version](https://img.shields.io/npm/v/@bubblydoo/uxp-test-framework-base)
+[![NPM Version](https://img.shields.io/npm/v/@bubblydoo/uxp-test-framework-base)](https://www.npmjs.com/package/@bubblydoo/uxp-test-framework-base)
 
 This is a package that exports the base types for the UXP Test Framework.
 

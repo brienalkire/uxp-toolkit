@@ -1,6 +1,6 @@
 # @bubblydoo/uxp-puppeteer-transport
 
-![NPM Version](https://img.shields.io/npm/v/@bubblydoo/uxp-puppeteer-transport)
+[![NPM Version](https://img.shields.io/npm/v/@bubblydoo/uxp-puppeteer-transport)](https://www.npmjs.com/package/@bubblydoo/uxp-puppeteer-transport)
 
 Puppeteer `ConnectionTransport` adapter for Adobe UXP CDP endpoints.
 

@@ -1,6 +1,6 @@
 # UXP Test Framework Plugin
 
-![NPM Version](https://img.shields.io/npm/v/@bubblydoo/uxp-test-framework-plugin)
+[![NPM Version](https://img.shields.io/npm/v/@bubblydoo/uxp-test-framework-plugin)](https://www.npmjs.com/package/@bubblydoo/uxp-test-framework-plugin)
 
 This is a package that exports a `runCli` function, which runs the Vite CLI and uses `@bubblydoo/vite-uxp-plugin`.
 

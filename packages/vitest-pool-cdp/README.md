@@ -1,6 +1,6 @@
 # @bubblydoo/vitest-pool-cdp
 
-![NPM Version](https://img.shields.io/npm/v/@bubblydoo/vitest-pool-cdp)
+[![NPM Version](https://img.shields.io/npm/v/@bubblydoo/vitest-pool-cdp)](https://www.npmjs.com/package/@bubblydoo/vitest-pool-cdp)
 
 Custom Vitest pool that runs tests inside CDP-connected runtimes (Chrome, Photoshop UXP, Electron, and similar environments).
 

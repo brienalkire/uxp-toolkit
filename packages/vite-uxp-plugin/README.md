@@ -1,6 +1,6 @@
 # @bubblydoo/vite-uxp-plugin
 
-![NPM Version](https://img.shields.io/npm/v/@bubblydoo/vite-uxp-plugin)
+[![NPM Version](https://img.shields.io/npm/v/@bubblydoo/vite-uxp-plugin)](https://www.npmjs.com/package/@bubblydoo/vite-uxp-plugin)
 
 Vite plugin for Adobe UXP Photoshop projects.
 

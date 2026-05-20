@@ -3,6 +3,16 @@
   "type": "module",
   "version": "0.0.4",
   "description": "Minimal Vite plugin for Adobe UXP manifest generation and dist bundling",
+  "author": "Hans Otto Wirtz <hansottowirtz@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/bubblydoo/uxp-toolkit/tree/main/packages/vite-uxp-plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bubblydoo/uxp-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bubblydoo/uxp-toolkit/issues"
+  },
   "exports": {
     ".": {
       "types": "./src/index.ts",

@@ -1,6 +1,6 @@
 # UXP Test Framework
 
-![NPM Version](https://img.shields.io/npm/v/@bubblydoo/uxp-test-framework)
+[![NPM Version](https://img.shields.io/npm/v/@bubblydoo/uxp-test-framework)](https://www.npmjs.com/package/@bubblydoo/uxp-test-framework)
 
 > [!NOTE]
 > The Vitest pool works better, so we recommend using that instead.

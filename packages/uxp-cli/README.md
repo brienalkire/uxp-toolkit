@@ -1,6 +1,6 @@
 # @bubblydoo/uxp-cli
 
-![NPM Version](https://img.shields.io/npm/v/@bubblydoo/uxp-cli)
+[![NPM Version](https://img.shields.io/npm/v/@bubblydoo/uxp-cli)](https://www.npmjs.com/package/@bubblydoo/uxp-cli)
 
 CLI helpers for opening Photoshop UXP DevTools without the Adobe Developer Tools app.
 

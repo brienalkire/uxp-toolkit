@@ -1,5 +1,7 @@
 # @bubblydoo/esbuild-adobe-protocol-plugin
 
+[![NPM Version](https://img.shields.io/npm/v/@bubblydoo/esbuild-adobe-protocol-plugin)](https://www.npmjs.com/package/@bubblydoo/esbuild-adobe-protocol-plugin)
+
 Tiny reusable esbuild plugin that strips the `adobe:` protocol from module specifiers and marks them as external.
 
 Example:

@@ -1,6 +1,6 @@
 # UXP Polyfills
 
-![NPM Version](https://img.shields.io/npm/v/@bubblydoo/uxp-polyfills)
+[![NPM Version](https://img.shields.io/npm/v/@bubblydoo/uxp-polyfills)](https://www.npmjs.com/package/@bubblydoo/uxp-polyfills)
 
 This package contains polyfills that are convenient and sometimes needed for building UXP extensions.
 

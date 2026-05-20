@@ -2,6 +2,16 @@
   "name": "@bubblydoo/uxp-puppeteer-transport",
   "type": "module",
   "version": "0.0.3",
+  "author": "Hans Otto Wirtz <hansottowirtz@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/bubblydoo/uxp-toolkit/tree/main/packages/uxp-puppeteer-transport",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bubblydoo/uxp-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bubblydoo/uxp-toolkit/issues"
+  },
   "exports": {
     ".": {
       "types": "./src/index.ts",

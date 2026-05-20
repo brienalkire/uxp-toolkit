@@ -3,6 +3,16 @@
   "type": "module",
   "version": "0.0.10",
   "description": "Vitest pool for running tests in Adobe UXP environments (Photoshop, etc.)",
+  "author": "Hans Otto Wirtz <hansottowirtz@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/bubblydoo/uxp-toolkit/tree/main/packages/vitest-pool-uxp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bubblydoo/uxp-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bubblydoo/uxp-toolkit/issues"
+  },
   "exports": {
     ".": {
       "types": "./src/index.ts",

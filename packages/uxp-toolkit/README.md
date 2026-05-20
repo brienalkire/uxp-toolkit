@@ -1,6 +1,6 @@
 # @bubblydoo/uxp-toolkit
 
-![NPM Version](https://img.shields.io/npm/v/@bubblydoo/uxp-toolkit)
+[![NPM Version](https://img.shields.io/npm/v/@bubblydoo/uxp-toolkit)](https://www.npmjs.com/package/@bubblydoo/uxp-toolkit)
 
 Typed helpers for Adobe Photoshop UXP plugins: safer `batchPlay`, command builders, and utilities around layer/document workflows.
 

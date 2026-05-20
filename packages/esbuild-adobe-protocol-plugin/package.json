@@ -3,6 +3,16 @@
   "type": "module",
   "version": "0.0.2",
   "description": "Reusable esbuild plugin to strip adobe: protocol from module specifiers",
+  "author": "Hans Otto Wirtz <hansottowirtz@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/bubblydoo/uxp-toolkit/tree/main/packages/esbuild-adobe-protocol-plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bubblydoo/uxp-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bubblydoo/uxp-toolkit/issues"
+  },
   "exports": {
     ".": {
       "types": "./src/index.d.ts",

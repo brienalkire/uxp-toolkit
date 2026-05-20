@@ -1,6 +1,6 @@
 # @bubblydoo/uxp-toolkit-react
 
-![NPM Version](https://img.shields.io/npm/v/@bubblydoo/uxp-toolkit-react)
+[![NPM Version](https://img.shields.io/npm/v/@bubblydoo/uxp-toolkit-react)](https://www.npmjs.com/package/@bubblydoo/uxp-toolkit-react)
 
 React hooks for Photoshop UXP plugins. Generic, non–app-specific utilities built on `@bubblydoo/uxp-toolkit`.
 
