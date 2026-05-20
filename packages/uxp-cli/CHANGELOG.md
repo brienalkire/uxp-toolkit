@@ -1,5 +1,11 @@
 # @bubblydoo/uxp-cli
 
+## 0.0.11
+
+### Patch Changes
+
+- 960a21b: Add create-cdp-url action
+
 ## 0.0.10
 
 ### Patch Changes
