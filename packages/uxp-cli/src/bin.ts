@@ -4,7 +4,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { setupCdpSession, setupCdpSessionWithUxpDefaults, setupDevtoolsConnection, waitForExecutionContextCreated } from '@bubblydoo/uxp-devtools-common';
+import { setupDevtoolsConnection } from '@bubblydoo/uxp-devtools-common';
 import arg from 'arg';
 import { openDevtoolsSessionInChrome } from './open-devtools-session';
 
@@ -18,7 +18,7 @@ Usage: uxp-cli <action> [options]
 
 Actions:
   open-devtools    Open Chrome DevTools for a UXP plugin
-  dump-object      Dump object properties to dump.json (always uses fake plugin)
+  create-cdp-url   Print the CDP devtools URL without opening Chrome
 
 Options:
   --plugin-path, -p <path>    Path to the UXP plugin directory
@@ -31,8 +31,9 @@ Examples:
   # Open devtools with custom plugin
   uxp-cli open-devtools --plugin-path ./my-plugin
 
-  # Dump object properties (always uses fake plugin)
-  uxp-cli dump-object
+  # Print the CDP URL
+  uxp-cli create-cdp-url
+  uxp-cli create-cdp-url --plugin-path ./my-plugin
 `);
 }
 
@@ -51,7 +52,7 @@ if (args['--help'] || args._.length === 0) {
 
 const action = args._[0];
 
-if (!['open-devtools', 'dump-object'].includes(action)) {
+if (!['open-devtools', 'create-cdp-url'].includes(action)) {
   console.error(`Error: Unknown action "${action}"\n`);
   showHelp();
   process.exit(1);
@@ -124,73 +125,23 @@ async function openDevtools() {
   await new Promise(() => {});
 }
 
-async function dumpObject() {
-  const { pluginPath } = await getPluginInfo(true);
+async function createCdpUrl() {
+  const { pluginPath } = await getPluginInfo(false);
 
   console.log('\nSetting up devtools URL...');
   const devtoolsConnection = await setupDevtoolsConnection(pluginPath);
-  console.log(`DevTools URL: ${devtoolsConnection.url}\n`);
+  console.log(`DevTools URL: ${devtoolsConnection.url}`);
 
-  console.log('Setting up CDP session...');
-  const { cdp } = await setupCdpSession(devtoolsConnection.url);
-
-  const executionContext = await waitForExecutionContextCreated(cdp, async () => {
-    await setupCdpSessionWithUxpDefaults(cdp);
-  });
-
-  console.log('Evaluating expression...');
-  const result = await cdp.Runtime.evaluate({
-    expression: `
-      (() => {
-        const app = require("photoshop").app;
-        const activeDocumentGetter = Object.getOwnPropertyDescriptor(Reflect.getPrototypeOf(app), "activeDocument").get;
-        return activeDocumentGetter;
-      })();
-    `,
-    uniqueContextId: executionContext.uniqueId,
-  });
-
-  console.log('Getting properties...');
-  const properties = await cdp.Runtime.getProperties({
-    objectId: result.result.objectId!,
-    accessorPropertiesOnly: false,
-    generatePreview: false,
-    nonIndexedPropertiesOnly: false,
-    ownProperties: false,
-  });
-
-  const _functionLocation = properties.internalProperties?.find((property: any) => property.name === '[[FunctionLocation]]')?.value;
-  const scopes = properties.internalProperties?.find((property: any) => property.name === '[[Scopes]]')?.value;
-
-  const scopesProperties = await cdp.Runtime.getProperties({
-    objectId: scopes!.objectId!,
-    ownProperties: true,
-  });
-
-  const allScopesResolved = await Promise.all(
-    scopesProperties.result.map((property: any) => cdp.Runtime.getProperties({
-      objectId: property.value!.objectId!,
-      ownProperties: true,
-    })),
-  );
-
-  const dump = {
-    subject: result.result,
-    properties,
-    scopes: allScopesResolved,
-  };
-
-  const dumpPath = path.resolve(process.cwd(), 'dump.json');
-  await fs.writeFile(dumpPath, JSON.stringify(dump, null, 2));
-  console.log(`\nDump written to: ${dumpPath}`);
+  console.log('\nPress Ctrl+C to exit...');
+  await new Promise(() => {});
 }
 
 // Handle actions
 if (action === 'open-devtools') {
   await openDevtools();
 }
-else if (action === 'dump-object') {
-  await dumpObject();
+else if (action === 'create-cdp-url') {
+  await createCdpUrl();
 }
 
 process.on('SIGINT', () => {
