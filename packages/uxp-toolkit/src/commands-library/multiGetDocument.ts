@@ -155,7 +155,7 @@ export const adjustmentSchema = z.discriminatedUnion('_obj', [
       input: z.tuple([z.number(), z.number()]),
       gamma: z.number(),
       output: z.tuple([z.number(), z.number()]),
-    })),
+    })).optional(),
   }),
   // curves (Curves)
   z.object({
