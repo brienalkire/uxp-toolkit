@@ -1,5 +1,11 @@
 # @bubblydoo/uxp-toolkit
 
+## 0.0.21
+
+### Patch Changes
+
+- 6d2312d: Change package metadata
+
 ## 0.0.20
 
 ### Patch Changes

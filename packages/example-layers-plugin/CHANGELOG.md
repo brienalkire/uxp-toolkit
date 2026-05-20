@@ -1,5 +1,14 @@
 # @bubblydoo/example-layers-plugin
 
+## 0.0.23
+
+### Patch Changes
+
+- Updated dependencies [6d2312d]
+  - @bubblydoo/uxp-toolkit-react@0.0.22
+  - @bubblydoo/uxp-polyfills@0.0.6
+  - @bubblydoo/uxp-toolkit@0.0.21
+
 ## 0.0.22
 
 ### Patch Changes

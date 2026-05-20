@@ -1,5 +1,11 @@
 # @adobe-uxp-types/uxp
 
+## 0.1.4
+
+### Patch Changes
+
+- 6d2312d: Change package metadata
+
 ## 0.1.3
 
 ### Patch Changes

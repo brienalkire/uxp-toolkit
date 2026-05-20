@@ -1,5 +1,14 @@
 # @bubblydoo/vitest-pool-uxp
 
+## 0.0.11
+
+### Patch Changes
+
+- 6d2312d: Change package metadata
+- Updated dependencies [6d2312d]
+  - @bubblydoo/uxp-devtools-common@0.0.11
+  - @bubblydoo/vitest-pool-cdp@0.0.11
+
 ## 0.0.10
 
 ### Patch Changes
